@@ -37,7 +37,10 @@
                         <div class="col-lg-8 position-relative mb-3 py-3">
                             <h3 class="text-center px-5 pt-2">{{ post.title }}</h3>
                             <p class="text-center px-5 pb-2">{{ post.excerpt }}</p>  
-                            <p class="position-absolute fixed-bottom text-center"><i class="fas fa-calendar-check"></i> {{ post.created_on }} | Author: {{ post.author }} | <i class="far fa-heart"> {{ post.number_of_likes }}</i></p>
+                            <p class="position-absolute fixed-bottom text-center">
+                                <i class="fas fa-calendar-check"></i> {{ post.created_on }} | Author: {{ post.author }} | 
+                                <i class="far fa-heart"> {{ post.number_of_likes }}</i>
+                            </p>
                     </div>
                 </div>
             </article>
