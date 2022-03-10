@@ -5,8 +5,8 @@
 <!-- Hero section -->
 <section class="hero py-4">
     <div class="container">
-        <div class="row">
-        {% for post in post_list %}
+        <div class="row justify-content-center">
+            {% for post in post_list %}
             <div class="col-lg-8">
                 <div class="hero-post shadow">
                     <img class="img-fluid" alt="Blog post image" src="{{ post.featured_image.url }}">
@@ -25,50 +25,20 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="col-lg-4">
-                <div class="hero-post shadow">
-                    <img class="img-fluid" alt="Blog post image" src="{{ post.featured_image.url }}">
-                    <div class="hero-date">
-                        <a href="#"><i class="fas fa-calendar-check"></i> {{ post.created_on }}</a>
-                    </div>
-                    <div class="hero-content">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <p class>Author: {{ post.author }}</p>
-                            </div>
-                            <div class="col-md-9">
-                                <h3>{{ post.title }}</h3>
-                                <p>{{ post.excerpt }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-post shadow">
-                    <img class="img-fluid" alt="Blog post image" src="{{ post.featured_image.url }}">
-                    <div class="hero-date">
-                        <a href="#"><i class="fas fa-calendar-check"></i> {{ post.created_on }}</a>
-                    </div>
-                    <div class="hero-content">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <p class>Author: {{ post.author }}</p>
-                            </div>
-                            <div class="col-md-9">
-                                <h2>{{ post.title }}</h2>
-                                <p>{{ post.excerpt }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        {% if forloop.counter|divisibleby:3 %}
+           
+            {% if forloop.counter|divisibleby:3 %}
         </div>
         <div class="row">
-        {% endif %}
-        {% endfor %}
+            {% endif %}
+            {% endfor %}
         </div>
+        <div class="col-lg-4">
+            <div class="hero-post shadow">
+                <img class="img-fluid" alt="Blog post image" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
+            </div>
+        </div>
+        
     </div>
 </section>
 
