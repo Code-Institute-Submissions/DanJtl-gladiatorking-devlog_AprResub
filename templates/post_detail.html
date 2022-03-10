@@ -19,7 +19,7 @@
     <!-- Blog post content -->
     <div class="container">
         <div class="row">
-            <div class="col-md-8 mx-auto shadow m-2 py-3 px-4">
+            <div class="col-md-8 mx-auto m-2 py-3 px-4">
                 <p>{{ post.content }}</p>
             </div>
 
@@ -36,6 +36,19 @@
                             {% endwith %}
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h3>Comments:</h3>
+                <div>
+                    {% for comments in comments %}
+                    <div>
+                        <p>{{ comment.name }} | {{ comment.created_on}}</p>
+                        {{ comment.body | linebreaks }}
+                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
