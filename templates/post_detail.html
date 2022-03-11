@@ -20,19 +20,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto m-2 py-3 px-4">
-                <p>{{ post.content }}</p>
+                <p>{{ post.content | safe }}</p>
             </div>
 
             <!-- Number of likes and comments -->
             <div class="container">
                 <div class="col-lg-8 mx-auto">
                     <div class="row">
-                        <div class="col-lg-6 text-center">
+                        <div class="col-sm-6 text-center">
                             {% with comments.count as total_comments %}
                             <p class="font-weight-bold text-dark"><i class=" far fa-comments"></i>{{ total_comments }}</p>
                             {% endwith %}
                         </div>
-                        <div class="col-lg-6 text-center">
+                        <div class="col-sm-6 text-center">
                             <p class="font-weight-bold text-dark"><i class=" far fa-heart"></i>{{ post.number_of_likes }}</p>
                         </div>
                     </div>
