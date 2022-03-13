@@ -11,6 +11,9 @@
             <div>
                 <img class="img-fluid" alt="Blog post image" src="{{ post.featured_image.url }}">
             </div>
+            <div class="text-center my-2">
+                <i class="fas fa-calendar-check"></i> {{ post.created_on }} | 
+            </div>
             <div>
                 <h1 class="post-title text-center pt-3">{{ post.title }}</h1>
             </div>
@@ -21,9 +24,10 @@
     <!-- Blog post content -->
     <div class="container">
         <div class="row">
-            <div class="col-md-8 mx-auto mb-2 pb-3 px-4">
+            <div class="col-md-8 mx-auto pb-3 px-4">
                 <p>{{ post.content | safe }}</p>
             </div>
+            <div class="col-md-8 mx-auto text-center py-2">Author: {{ post.author }}</div>
 
             <!-- Number of likes and comments -->
             <div class="container">
@@ -60,7 +64,7 @@
 
         <!-- Comments -->
         <div class="row">
-            <div class="col-md-8 card mb-4  mt-3 ">
+            <div class="col-md-8 shadow mb-4  mt-3 ">
                 <h3>Comments:</h3>
                 <div class="card-body">
                     {% for comment in comments %}
