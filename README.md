@@ -3,7 +3,7 @@ GladiatorKing Devlog is a blog where you can follow the development of the game 
 
 **Link to the website:** https://gladiatorking-devlog.herokuapp.com/
 
-![Responsive website](static/images/spacequiz_website.jpg)
+![Responsive website](static/images/website.jpg)
 ***
 
 ## **Features**
@@ -11,7 +11,7 @@ GladiatorKing Devlog is a blog where you can follow the development of the game 
 
 ### **Navigation** 
 
-Navigation menu is at the top and is easy to find and simple to use. When the user hovers over the links, it changes color to indicate it is clickable.
+Navigation menu is at the top and is easy to find and simple to use.
 
 ![Navigation](static/images/navbar.jpg)
 
@@ -38,14 +38,12 @@ A simple design that provide clear links to all social media platforms. The link
 The user can easily choose to register on the page to be able to participate in the conversation and like different posts. 
 
 ![Sign Up](static/images/signup.jpg)
-***
 
 ### **Sign In**
 
 If the user already has an account, the user can easily log in by entering their details 
 
 ![Sign In](static/images/signin.jpg)
-***
 
 ### **Sign Out**
 
@@ -80,46 +78,95 @@ If the user wants to join the conversation, the user can easily comment on a blo
 ![Admin Panel](static/images/admin.jpg)
 
 **From the django administration, the admin can:**
-- **Create posts.** As an admin, you can choose to create a blog post. You can easily save it as a draft and continue on it later - until you are ready to publish it. 
-- **XYZ**
 
+- **Create posts.** As an admin, you can choose to create a blog post. You can easily save it as a draft and continue on it later - until you are ready to publish it. 
+
+- **Update posts.** As an admin, you can easy update a blog post if you need to change something.
+
+- **Delete posts.** As an admin, you can easy delete a blog post if you need to.
+
+- **Approve comments.** As an admin, you choose which comments you want to be shown on the website.
+
+- **Delete comments.** As an admin, you can delete comments whether they are approved or not. 
+
+- **Filter blog posts.** As an admin, you can filter the blog posts by date.
+
+- **Delete users.** As an admin, you can delete users if you need to.
+
+---
 ## **UX**
 ---
 
 ### **User Story**
-A person interested in space wants to test their knowledge of the subject by doing a fun quiz. Once the quiz is done, the user can redo the quiz to get a higher score or challenge family and friends to try to beat him. 
+*A person looking for a new game can follow the development of GladiatorKing from start to release date, and give their opinions during the development.*
+
+Site pagination: As a Site User I can view a list of posts so that I can select which post to view.
+
+View post list: As a Site User I can view a list of posts so that I can select one to read.
+
+Open a post: As a Site User I can click on a post so that I can read the full text.
+
+View likes: As a Site User I can view the number of likes on each post so that I can see which is the most popular or viral.
+
+View comments: As a Site User I can view comments on an individual post so that I can read the conversation.
+
+Account registration: As a Site User I can register an account so that I can comment and like.
+
+Comment on a post: As a Site User I can leave comments on a post so that I can be involved in the conversation.
+
+Like/Unlike: As a Site User I can like or unlike a post so that I can interact with the content.
+
 
 ### **Goals For Website Owners** 
-The goal of the website is to entertain the user with a quiz. It provides the user with spacerelated questions to give the user a challenge in their area of interest. The user will also leave the quiz with a new knowledge. 
+The goal of the website is to get attention for the game during the development, and also getting people to contribute to the Kickstarter campaign. 
 
-### **Wireframe** ###
-Was inspired by this design when I built spaceQuiz. 
-![Wireframe design](assets/images/example_design.jpg)
-***
-
+---
 ## **Testing And Validation**
 ---
 - **Responsive design.** The website is tested with Chrome and Firefox developer tools on all standard screen sizes.
 
-- **Different browsers work.** The website is tested in Chrome, Firefix, Edge and Safari
+- **Different browsers work.** The website is tested in Chrome, Firefox, Edge and Safari
 
 - **All links and buttons work.** Every link and button have been checked and works as planned. 
 
 **HTML** - No errors were detected with official W3C validator.
 
-Link: https://validator.w3.org/nu/?doc=https%3A%2F%2Fdanjtl.github.io%2FspaceQuiz%2F
+![W3C validator](static/images/w3validator.jpg)
 
 **CSS** - No errors were detected with official (Jigsaw) validator.
 
-Link: https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdanjtl.github.io%2FspaceQuiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv
+![Jigsaw](static/images/w3c-validator.jpg)
 
-**JavaScript** - No warnings were detected when testing the code on JSHint website.
+**Python** - No errors were detected when testing the code on PEP8 online website.
 
-Link: https://jshint.com/
+**admin.py**
+![Pep8](static/images/admin-pep8.jpg)
+
+**apps.py**
+![Pep8](static/images/apps-pep8.jpg)
+
+**urls.py (blog)**
+![Pep8](static/images/blog-urls-pep8.jpg)
+
+**forms.py** 
+![Pep8](static/images/forms-pep8.jpg)
+
+**urls.py (gladiatorkingdevlog)**
+![Pep8](static/images/gladiatorkingdevlog-urls-pep8.jpg)
+
+**models.py**
+![Pep8](static/images/models-pep8.jpg)
+
+**views.py**
+![Pep8](static/images/views-pep8.jpg)
 
 **Accessibility report:**
 
-![Accessibility report](assets/images/accessibility.jpg)
+![Accessibility report](static/images/lighthouse.jpg)
+
+**JavaScript** - No warnings were detected when testing the code on JSHint website.
+![JSHint](static/images/javascript.jpg)
+
 ***
 
 ## **Bugs** ##
@@ -138,44 +185,53 @@ No unfixed bugs.
 ### **Languages** ##
 - HTML
 - CSS
+- Python + Django
 - JavaScript
 
-### **Programs** ###
-- Gitpod: Used for writing code.
-- Git: Used for version-control.
-- GitHub: Used for store data and hosting platform.
+### **Programs and apps** ###
+- Gitpod: Used for writing code
+- Git: Used for version-control
+- GitHub: Used for store data
+- PostgreSQL: Database
+- Cloudinary: Store images
+- Summernote: WYSIWYG editor
+- Bootstrap: CSS framework
+- Crispy form: Manage Django forms
+- Allauth: Account management
+- Heroku: Cloud deployment platform
 ***
 
 ## **Deployment** ##
 ---
 
-The site was deployed with GitHub.
-Steps to deployment:
-- Navigate to Settings tab
-- Select Pages from the side menu
-- Under the source drop-down menu, select Main
+The site was deployed using Heroku, following the steps offered by Codeinstitute. Instructions are found here: https://codeinstitute.s3.amazonaws.com/fst/Django%20Blog%20Cheat%20Sheet%20v1.pdf
 
-Link to the website: https://danjtl.github.io/spaceQuiz/
+Heroku:
+1. Create an account with Heroku
+2. Create a new app whilst logged in
+3. Add Buildpacks 'Python' and 'NodeJS'
+4. Connect your GitHub repository via "Connect to GitHub"
+5. Set up your config vars (info in doc above)
+6. Enable either "Automatic Deploys" or do it manually.
+
+Link to the website: https://gladiatorking-devlog.herokuapp.com/
 ***
 
 ## **Credits** ##
 ---
-Credit to my brother Jimmy Junttila to help me solve a few functions. 
-I have taken inspiration from a YouTube channel called Florin Pop. Some code used in this video, was partially used for my own application. -  https://www.youtube.com/watch?v=dtKciwk_si4&t=3514s
+In order to have time to do a large project like this in such a short time, I had to follow the Code Institutes guide to be able to finish this website - and get it up and running without problems.
+
+Credit to my brother Jimmy Junttila for working with me alongside the project. 
+
+To complete this blog I used Code Institutes student template: https://github.com/Code-Institute-Org/gitpod-full-template
+
 ### **Images** ###
-Pictures is taken from https://www.canva.com/
+Pictures is taken from: https://www.canva.com/
 ### **Colors** ###
-The color palette used is from https://paperheartdesign.com/blog/color-palette-awesome-space
+The color palette used is from: https://colorhunt.co/palette/0e185f2fa4ff00ffdde8ffc2
 ### **Fonts** ###
-Fonts is taken from https://fonts.google.com/
+Fonts is taken from: https://fonts.google.com/
 ### **Icons** ###
-Icons is taken from https://fontawesome.com/
-### **Questions** ###
-Questions is taken from:
-- https://icebreakerideas.com/space-trivia/
-- https://quizglobal.com/quizplay/quizplayqanda/Space%20Quiz%20Questions%20and%20Answers
-### **Codes** ###
- 
-- JavaScript code - learned "checked radiobutton" code here: https://tinyurl.com/59ddenvd
-- JavaScript code - learned play again button here: https://tinyurl.com/39e3f3pn
-- JavaScript code - learned code here: https://tinyurl.com/yc5a78th
+Icons is taken from: https://fontawesome.com/
+### **Blog posts** ###
+Blog posts content is taken from: https://www.gridsagegames.com/blog/
