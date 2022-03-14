@@ -1,108 +1,181 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **GladiatorKing Devlog**
+GladiatorKing Devlog is a blog where you can follow the development of the game GladiatorKing. Get the latest news about the game and see what features are added week by week until the release date. If you are interested in supporting the development, you can easily visit the game's Kickstarter campaign and contribute there.
 
-Welcome DanJtl,
+**Link to the website:** https://gladiatorking-devlog.herokuapp.com/
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Responsive website](static/images/spacequiz_website.jpg)
+***
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
+## **Features**
 ---
 
-Happy coding!
+### **Navigation** 
+
+Navigation menu is at the top and is easy to find and simple to use. When the user hovers over the links, it changes color to indicate it is clickable.
+
+![Navigation](static/images/navbar.jpg)
+
+### **Main Image And Text Section**
+
+The user can immediately see what the website is about. The site uses a big headline to capture the user interest and has a simple call to action for those who want to support the development - by clicking the button and visit their Kickstarter campaign. 
+
+![Main Image And Text Section](static/images/hero-section.jpg)
+
+### **Blog Posts**
+
+The user can easily see the latest blog post from the developer. They can see when the post has been published, how many people have liked and commented on it and the author.
+
+![Blog Posts](static/images/blog-posts.jpg)
+
+### **Footer**
+
+A simple design that provide clear links to all social media platforms. The links opens up in a new tab when clicked. 
+
+![Footer](static/images/footer.jpg)
+
+### **Sign Up**
+
+The user can easily choose to register on the page to be able to participate in the conversation and like different posts. 
+
+![Sign Up](static/images/signup.jpg)
+***
+
+### **Sign In**
+
+If the user already has an account, the user can easily log in by entering their details 
+
+![Sign In](static/images/signin.jpg)
+***
+
+### **Sign Out**
+
+When the user chooses to log out, the user can easily do so with a simple push of a button. 
+
+![Sign Out](static/images/signout.jpg)
+
+### **Blog Post Page**
+
+The user can easily click on a specific blog post and read it. The user can also see when the blog post has been published and who wrote it. 
+
+![Blog Post Page](static/images/blog-post.jpg)
+
+### **Commenting And Likes**
+
+The user can see what other people have written below a blog post and see how many have liked it.
+
+![Commenting And Likes](static/images/commenting-likes.jpg)
+
+### **Commenting**
+
+If the user wants to join the conversation, the user can easily comment on a blog post. 
+
+![Commenting](static/images/commenting.jpg)
+
+---
+## **Django Administration**
+---
+
+### **Admin Panel**
+
+![Admin Panel](static/images/admin.jpg)
+
+**From the django administration, the admin can:**
+- **Create posts.** As an admin, you can choose to create a blog post. You can easily save it as a draft and continue on it later - until you are ready to publish it. 
+- **XYZ**
+
+## **UX**
+---
+
+### **User Story**
+A person interested in space wants to test their knowledge of the subject by doing a fun quiz. Once the quiz is done, the user can redo the quiz to get a higher score or challenge family and friends to try to beat him. 
+
+### **Goals For Website Owners** 
+The goal of the website is to entertain the user with a quiz. It provides the user with spacerelated questions to give the user a challenge in their area of interest. The user will also leave the quiz with a new knowledge. 
+
+### **Wireframe** ###
+Was inspired by this design when I built spaceQuiz. 
+![Wireframe design](assets/images/example_design.jpg)
+***
+
+## **Testing And Validation**
+---
+- **Responsive design.** The website is tested with Chrome and Firefox developer tools on all standard screen sizes.
+
+- **Different browsers work.** The website is tested in Chrome, Firefix, Edge and Safari
+
+- **All links and buttons work.** Every link and button have been checked and works as planned. 
+
+**HTML** - No errors were detected with official W3C validator.
+
+Link: https://validator.w3.org/nu/?doc=https%3A%2F%2Fdanjtl.github.io%2FspaceQuiz%2F
+
+**CSS** - No errors were detected with official (Jigsaw) validator.
+
+Link: https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdanjtl.github.io%2FspaceQuiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv
+
+**JavaScript** - No warnings were detected when testing the code on JSHint website.
+
+Link: https://jshint.com/
+
+**Accessibility report:**
+
+![Accessibility report](assets/images/accessibility.jpg)
+***
+
+## **Bugs** ##
+---
+
+No bugs were detected.
+
+### **Unfixed bugs** ###
+
+No unfixed bugs.
+***
+
+## **Technologies Used** ##
+---
+
+### **Languages** ##
+- HTML
+- CSS
+- JavaScript
+
+### **Programs** ###
+- Gitpod: Used for writing code.
+- Git: Used for version-control.
+- GitHub: Used for store data and hosting platform.
+***
+
+## **Deployment** ##
+---
+
+The site was deployed with GitHub.
+Steps to deployment:
+- Navigate to Settings tab
+- Select Pages from the side menu
+- Under the source drop-down menu, select Main
+
+Link to the website: https://danjtl.github.io/spaceQuiz/
+***
+
+## **Credits** ##
+---
+Credit to my brother Jimmy Junttila to help me solve a few functions. 
+I have taken inspiration from a YouTube channel called Florin Pop. Some code used in this video, was partially used for my own application. -  https://www.youtube.com/watch?v=dtKciwk_si4&t=3514s
+### **Images** ###
+Pictures is taken from https://www.canva.com/
+### **Colors** ###
+The color palette used is from https://paperheartdesign.com/blog/color-palette-awesome-space
+### **Fonts** ###
+Fonts is taken from https://fonts.google.com/
+### **Icons** ###
+Icons is taken from https://fontawesome.com/
+### **Questions** ###
+Questions is taken from:
+- https://icebreakerideas.com/space-trivia/
+- https://quizglobal.com/quizplay/quizplayqanda/Space%20Quiz%20Questions%20and%20Answers
+### **Codes** ###
+ 
+- JavaScript code - learned "checked radiobutton" code here: https://tinyurl.com/59ddenvd
+- JavaScript code - learned play again button here: https://tinyurl.com/39e3f3pn
+- JavaScript code - learned code here: https://tinyurl.com/yc5a78th

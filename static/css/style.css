@@ -6,6 +6,7 @@ body {
 }
 
 /* base.html */
+
 .navbar {
     background-color: #2FA4FF;
     font-weight: bold;
@@ -16,7 +17,13 @@ body {
     color: white;
 }
 
-.nav-link {
+.nav-link, 
+.nav-quote {
+    color: white !important;
+}
+
+
+.navbar-nav {
     color: white;
 }
 
