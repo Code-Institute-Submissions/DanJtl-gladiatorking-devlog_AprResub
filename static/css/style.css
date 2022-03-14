@@ -37,6 +37,10 @@ footer {
     background-color: #E8FFC2;
 }
 
+.author-color {
+    color:#0E185F
+}
+
 /* post_detail.html*/
 .btn-like {
     color: #E84610;
