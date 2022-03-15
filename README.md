@@ -8,10 +8,11 @@ GladiatorKing Devlog is a blog where you can follow the development of the game 
 
 ## **Features**
 ---
+When a user performs an action on the site, the user will get an alert message at top of page that automatically disappear in 3 sec. (actions: signup, login, logout, commenting blogpost).
 
 ### **Navigation** 
 
-Navigation menu is at the top and is easy to find and simple to use.
+Navigation menu is at the top and is easy to find and simple to use. The navigation bar includes links to Home, Register and Login - it also have a short message.
 
 ![Navigation](static/images/navbar.jpg)
 
@@ -23,13 +24,13 @@ The user can immediately see what the website is about. The site uses a big head
 
 ### **Blog Posts**
 
-The user can easily see the latest blog post from the developer. They can see when the post has been published, how many people have liked and commented on it and the author.
+The user can easily see the latest blog post from the developer. They can see when the post has been published, how many people have liked and commented on it and the author. When there's over 6 blogpost published, a 'next page' button will appear at bottom, when clicked - it will load more blogposts, and a 'prev page' button will be shown instead, so the user can go back easily.
 
 ![Blog Posts](static/images/blog-posts.jpg)
 
 ### **Footer**
 
-A simple design that provide clear links to all social media platforms. The links opens up in a new tab when clicked. 
+A simple design that provide clear links to all social media platforms. The links opens up in a new tab when clicked. It also have a copyright text and a link to main page.
 
 ![Footer](static/images/footer.jpg)
 
@@ -41,7 +42,7 @@ The user can easily choose to register on the page to be able to participate in 
 
 ### **Sign In**
 
-If the user already has an account, the user can easily log in by entering their details 
+If the user already has an account, the user can easily log in by entering their details. 
 
 ![Sign In](static/images/signin.jpg)
 
@@ -68,6 +69,13 @@ The user can see what other people have written below a blog post and see how ma
 If the user wants to join the conversation, the user can easily comment on a blog post. 
 
 ![Commenting](static/images/commenting.jpg)
+
+
+---
+## **Wireframes**
+---
+
+Was inspired by this design when I built GladiatorKing Devlog: https://startbootstrap.com/previews/clean-blog
 
 ---
 ## **Django Administration**
@@ -100,34 +108,38 @@ If the user wants to join the conversation, the user can easily comment on a blo
 ### **User Story**
 *A person looking for a new game can follow the development of GladiatorKing from start to release date, and give their opinions during the development.*
 
-Site pagination: As a Site User I can view a list of posts so that I can select which post to view.
-
-View post list: As a Site User I can view a list of posts so that I can select one to read.
-
-Open a post: As a Site User I can click on a post so that I can read the full text.
-
-View likes: As a Site User I can view the number of likes on each post so that I can see which is the most popular or viral.
-
-View comments: As a Site User I can view comments on an individual post so that I can read the conversation.
-
-Account registration: As a Site User I can register an account so that I can comment and like.
-
-Comment on a post: As a Site User I can leave comments on a post so that I can be involved in the conversation.
-
-Like/Unlike: As a Site User I can like or unlike a post so that I can interact with the content.
+- Site pagination: As a Site User I can view a list of posts so that I can select which post to view.
+- View post list: As a Site User I can view a list of posts so that I can select one to read.
+- Open a post: As a Site User I can click on a post so that I can read the full text.
+- View likes: As a Site User I can view the number of likes on each post so that I can see which is the most popular or viral.
+- View comments: As a Site User I can view comments on an individual post so that I can read the conversation.
+- Account registration: As a Site User I can register an account so that I can comment and like.
+- Comment on a post: As a Site User I can leave comments on a post so that I can be involved in the conversation.
+- Like/Unlike: As a Site User I can like or unlike a post so that I can interact with the content.
 
 
 ### **Goals For Website Owners** 
 The goal of the website is to get attention for the game during the development, and also getting people to contribute to the Kickstarter campaign. 
 
+
+### **Future updates** 
+- Add alot more blogposts, and a filter so users easily can sort the blogposts how they want.
+- Add a contact section, so users easily can contact me using a form.
+
+- Add more features for the users, such as deleting/change their own comment posts, delete their accounts etc. 
+
+
 ---
 ## **Testing And Validation**
 ---
+**Manually tested:**
 - **Responsive design.** The website is tested with Chrome and Firefox developer tools on all standard screen sizes.
 
 - **Different browsers work.** The website is tested in Chrome, Firefox, Edge and Safari
 
 - **All links and buttons work.** Every link and button have been checked and works as planned. 
+
+- **In admin panel everything works.** Approve comments, delete comments, create blogposts, delete blogposts, see all user/admin accounts. There's even a 'filter' on the right, so you easily can navigate. 
 
 **HTML** - No errors were detected with official W3C validator.
 
@@ -204,7 +216,7 @@ No unfixed bugs.
 ## **Deployment** ##
 ---
 
-The site was deployed using Heroku, following the steps offered by Codeinstitute. Instructions are found here: https://codeinstitute.s3.amazonaws.com/fst/Django%20Blog%20Cheat%20Sheet%20v1.pdf
+The site was deployed using Heroku. Code Institute instructions are found here: https://codeinstitute.s3.amazonaws.com/fst/Django%20Blog%20Cheat%20Sheet%20v1.pdf
 
 Heroku:
 1. Create an account with Heroku
@@ -219,11 +231,13 @@ Link to the website: https://gladiatorking-devlog.herokuapp.com/
 
 ## **Credits** ##
 ---
-In order to have time to do a large project like this in such a short time, I had to follow the Code Institutes guide to be able to finish this website - and get it up and running without problems.
+In order to have time to do a large project like this in such a short time, I had to follow the Code Institute's guide (big credit) to be able to finish this website - and get it up and running without problems. 
 
-Credit to my brother Jimmy Junttila for working with me alongside the project. 
+Credit to my brother Jimmy Junttila for working with me along the project. 
 
-To complete this blog I used Code Institutes student template: https://github.com/Code-Institute-Org/gitpod-full-template
+Credit to the Code Institute's tutor support - for helping me out.
+
+To complete this blog I used Code Institute's student template: https://github.com/Code-Institute-Org/gitpod-full-template
 
 ### **Images** ###
 Pictures is taken from: https://www.canva.com/
