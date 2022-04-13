@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Post
+from .models import Post, Comment
 from .forms import CommentForm
 
 
@@ -93,3 +93,15 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+def delete_own_comment(request, id=None):
+    """
+    Delete comment
+    """
+    comment = get_object_or_404(Comment, id=id)
+    r = request.user
+    if (
+        comment.name == r.username and r.is_authenticated
+    ):
+        comment.delete()
+        return HttpResponseRedirect(request.META.get("HTTP_REFERER"))
