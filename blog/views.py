@@ -142,10 +142,28 @@ def delete_own_comment(request, id=None):
     else:
         messages.add_message(request, messages.ERROR, "An error occurred")
 
-def edit_own_comment(request, id=None):
+
+def edit_own_comment(request, comment_id):
     """
     Edit comment
     """
+    comment = get_object_or_404(Comment, id=comment_id)
+    if request.method == 'POST':
+        form = CommentForm(request.POST)
+        if form.is_valid():
+            form.save()
+            
+    form = CommentForm(instance=comment)
+
+
+    context = {
+        'form': form
+    }
+    return render(request, 'edit_comment.html', context)
+
+
+"""
+def edit_own_comment(request, id=None):
     if request.user.is_authenticated and request.method == 'POST':
         comment_id = request.POST['comment_id']
         edit_comment = request.POST['edit_comment']
@@ -153,6 +171,7 @@ def edit_own_comment(request, id=None):
         bc = comment.objects.filter(pk=comment_id).first()
         bc.content = edit_comment
         bc.save()
-        return HttpResponse('success')
+        return HttpResponse('Success')
     else:
         return HttpResponse('An error occurred')
+"""

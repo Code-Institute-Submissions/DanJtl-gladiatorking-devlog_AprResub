@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+
+<section class="col-md-10 card mb-4 mt-3 left top mx-auto">
+    <div class="col-md-10 mx-auto">
+        <div class="container">
+            <h3>Edit your comment:</h3>
+            <p>Posting as: {{ user.username }}</p>
+            <form method="post" style="margin-top: 1.3em;">
+                {{ form | crispy }}
+                {% csrf_token %}
+                <button type="submit" class="post-link btn btn-primary btn-lg btn-color">Update comment</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
