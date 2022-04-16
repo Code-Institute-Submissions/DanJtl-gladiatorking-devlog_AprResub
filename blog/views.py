@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib import messages
 from .models import Post, Comment, Contact
 from .forms import CommentForm
@@ -141,3 +141,18 @@ def delete_own_comment(request, id=None):
         return HttpResponseRedirect(request.META.get("HTTP_REFERER"))
     else:
         messages.add_message(request, messages.ERROR, "An error occurred")
+
+def edit_own_comment(request, id=None):
+    """
+    Edit comment
+    """
+    if request.user.is_authenticated and request.method == 'POST':
+        comment_id = request.POST['comment_id']
+        edit_comment = request.POST['edit_comment']
+        comment = get_object_or_404(Comment, id=id)
+        bc = comment.objects.filter(pk=comment_id).first()
+        bc.content = edit_comment
+        bc.save()
+        return HttpResponse('success')
+    else:
+        return HttpResponse('An error occurred')
