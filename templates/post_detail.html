@@ -78,11 +78,10 @@
                         {{ comment.body | linebreaks }}
                         {% if user.username == comment.name %}
                         <div>
-                            <a href="{% url 'delete_comment' comment.id %}" class="btn btn-danger">delete</a>
+                            <a href="{% url 'delete_comment' comment.id %}" class="btn btn-danger">Delete</a>
                             <a href="{% url 'edit_comment' comment.id %}">
-                                <button class="btn btn-warning">edit</button>
+                                <button class="btn btn-warning">Edit</button>
                             </a>
-                            <!-- <a href="{% url 'edit_comment' comment.id %}" class="btn btn-warning">edit</a> -->
                         </div>
                         {% endif %}
                     </div>
