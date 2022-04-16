@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
-from .models import Post, Comment
+from .models import Post, Comment, Contact
 from .forms import CommentForm
 
 
@@ -78,13 +78,42 @@ class PostDetail(View):
         )
 
 
+class ContactPage(View):
+    """
+    ContactPage class
+    """
+    def post(self, request, *args, **kwargs):
+        """
+        Post method
+        """
+        contact_form = Contact.objects.create(
+            name = request.POST["name"],
+            email = request.POST["email"],
+            subject = request.POST["subject"],
+            message = request.POST["message"],
+        )
+        contact_form.save()
+        message.add_message(
+            request,
+            messages.SUCCESS,
+            'Thank you for contacting us! You will hear from us soon.',
+        )
+        return HttpResponseRedirect(request.META.get("HTTP_REFERER"))
+
+    def get(self, request):
+        """
+        Get method
+        """
+        return render(request, 'contact.html')
+
+
 class PostLike(View):
     """
     PostLike class
     """
     def post(self, request, slug):
         """
-        post method
+        Post method
         """
         post = get_object_or_404(Post, slug=slug)
 
