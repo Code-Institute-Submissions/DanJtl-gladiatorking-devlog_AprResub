@@ -6,7 +6,6 @@ class CommentForm(forms.ModelForm):
     """
     Comment form class
     """
-    body = forms.CharField(required=True, max_length=250)
 
     class Meta:
         """
@@ -14,3 +13,4 @@ class CommentForm(forms.ModelForm):
         """
         model = Comment
         fields = ('body',)
+        body = forms.CharField(required=True, max_length=250)
