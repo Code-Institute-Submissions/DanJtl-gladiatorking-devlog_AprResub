@@ -87,13 +87,13 @@ class ContactPage(View):
         Post method
         """
         contact_form = Contact.objects.create(
-            name = request.POST["name"],
-            email = request.POST["email"],
-            subject = request.POST["subject"],
-            message = request.POST["message"],
+            name=request.POST["name"],
+            email=request.POST["email"],
+            subject=request.POST["subject"],
+            message=request.POST["message"],
         )
         contact_form.save()
-        message.add_message(
+        messages.add_message(
             request,
             messages.SUCCESS,
             'Thank you for contacting us! You will hear from us soon.',

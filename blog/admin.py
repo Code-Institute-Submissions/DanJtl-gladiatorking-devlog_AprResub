@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-from .models import Post, Comment
+from .models import Post, Comment, Contact
 
 
 @admin.register(Post)
@@ -30,3 +30,6 @@ class CommentAdmin(admin.ModelAdmin):
         approve comment method
         """
         queryset.update(approved=True)
+
+
+admin.site.register(Contact)
