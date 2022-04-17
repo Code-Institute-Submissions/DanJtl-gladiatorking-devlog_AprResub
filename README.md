@@ -267,6 +267,8 @@ Credit to my brother Jimmy Junttila for working with me along the project.
 
 Credit to the Code Institute's tutor support - for helping me out.
 
+Credit to B Learning Club's youtube video on how to build a contact form - https://www.youtube.com/watch?v=lSgRWA4PMt4&list=LL&index=1&t=215s
+
 To complete this blog I used Code Institute's student template: https://github.com/Code-Institute-Org/gitpod-full-template
 
 ### **Images** ###
