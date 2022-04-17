@@ -70,12 +70,36 @@ If the user wants to join the conversation, the user can easily comment on a blo
 
 ![Commenting](static/images/commenting.jpg)
 
+### **Edit Comment**
+
+If the user wants to change his comment, the user can easily do so by clicking the edit button and change it. 
+
+![Edit Comment](static/images/edit-comment.jpg)
+
+### **Delete Comment**
+
+If the user wants to delete his comment, the user can easily do so by clicking the delete button. 
+
+![Edit Comment](static/images/delete-comment.jpg)
+
+### **Contact**
+
+If the user wants to contact the website owners, the user can easily do so by using this contact form. The message can be found in Django administration under "Contacts". 
+
+![Contact](static/images/contact.jpg)
 
 ---
-## **Wireframes**
+## **Wireframes And Design**
 ---
+Wireframe created in Balsamiq - design of the home page. 
 
-Was inspired by this design when I built GladiatorKing Devlog: https://startbootstrap.com/previews/clean-blog
+![Wireframe](static/images/wireframe.jpg)
+
+I also took inspiration from this website: https://startbootstrap.com/previews/clean-blog
+
+I chose colors that clearly mark and separate different parts of the page, so that the user can easily navigate around the page without getting confused.
+
+The typography I chose is easy to read and stands out to the user. It also gives a professional look to the overall design of the site.
 
 ---
 ## **Django Administration**
@@ -101,6 +125,8 @@ Was inspired by this design when I built GladiatorKing Devlog: https://startboot
 
 - **Delete users.** As an admin, you can delete users if you need to.
 
+- **Submitted contacts.** As an admin, you can view messages sent by users through the website's contact form.
+
 ---
 ## **UX**
 ---
@@ -116,6 +142,11 @@ Was inspired by this design when I built GladiatorKing Devlog: https://startboot
 - Account registration: As a Site User I can register an account so that I can comment and like.
 - Comment on a post: As a Site User I can leave comments on a post so that I can be involved in the conversation.
 - Like/Unlike: As a Site User I can like or unlike a post so that I can interact with the content.
+- Edit comment: As a Site User I can edit my own comment so that I can change my opinion.
+- Delete comment: As a Site User I can delete my own comment so that it disappears from the website. 
+
+**CRUD functionality:** 
+All CRUD functionalities is available for users in the front end.
 
 
 ### **Goals For Website Owners** 
@@ -124,9 +155,8 @@ The goal of the website is to get attention for the game during the development,
 
 ### **Future updates** 
 - Add alot more blogposts, and a filter so users easily can sort the blogposts how they want.
-- Add a contact section, so users easily can contact me using a form.
 
-- Add more features for the users, such as deleting/change their own comment posts, delete their accounts etc. 
+- Add more features for the users, such as an option to edit/delete their accounts etc. 
 
 
 ---
@@ -139,7 +169,7 @@ The goal of the website is to get attention for the game during the development,
 
 - **All links and buttons work.** Every link and button have been checked and works as planned. 
 
-- **In admin panel everything works.** Approve comments, delete comments, create blogposts, delete blogposts, see all user/admin accounts. There's even a 'filter' on the right, so you easily can navigate. 
+- **In admin panel everything works.** Approve comments, delete comments, create blogposts, delete blogposts, view contact messages, see all user/admin accounts. There's even a 'filter' on the right, so you easily can navigate. 
 
 **HTML** - No errors were detected with official W3C validator.
 
